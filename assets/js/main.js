@@ -152,6 +152,13 @@
       heroCarouselIndicators.innerHTML += "<li data-bs-target='#heroCarousel' data-bs-slide-to='" + index + "'></li>"
   });
 
+  let heroCarousel = new bootstrap.Carousel('#heroCarousel', {
+    interval: 8000, // Tempo em milissegundos (3 segundos)
+    ride: 'carousel' // Iniciar automaticamente o carrossel
+  });
+
+  heroCarousel.interval = 8000;
+
   /**
    * Porfolio isotope and filter
    */
